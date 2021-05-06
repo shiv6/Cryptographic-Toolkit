@@ -1,0 +1,717 @@
+{
+	"info": {
+		"_postman_id": "335de89f-86bf-494d-9ea1-464ac8c368f1",
+		"name": "Cryptographic Toolkit",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Classic Ciphers",
+			"item": [
+				{
+					"name": "Substitution Ciphers",
+					"item": [
+						{
+							"name": "Mono-alphabetic Ciphers",
+							"item": [
+								{
+									"name": "Caesar Cipher",
+									"item": [
+										{
+											"name": "localhost:5000/caesar_cipher",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"encryption\",\r\n    \"key\": 5,\r\n    \"text\": \"Computer Security Project\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/caesar_cipher",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"caesar_cipher"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "localhost:5000/caesar_cipher",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"decryption\",\r\n    \"key\": 5,\r\n    \"text\": \"Htruzyjw Xjhzwnyd Uwtojhy\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/caesar_cipher",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"caesar_cipher"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "Affine Cipher",
+									"item": [
+										{
+											"name": "localhost:5000/affine_cipher",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"encryption\",\r\n    \"key\": [5, 6],\r\n    \"text\": \"COMPUTER SECURITY PROJECT\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/affine_cipher",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"affine_cipher"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "localhost:5000/affine_cipher",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"decryption\",\r\n    \"key\": [5, 6],\r\n    \"text\": \"QYODCXANSAQCNUXWDNYZAQX\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/affine_cipher",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"affine_cipher"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Poly-alphabetic Ciphers",
+							"item": [
+								{
+									"name": "Vigenere Cipher",
+									"item": [
+										{
+											"name": "localhost:5000/vigenere_cipher",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"encryption\",\r\n    \"key\": \"somekey\",\r\n    \"text\": \"Computer Security Project\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/vigenere_cipher",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"vigenere_cipher"
+													]
+												}
+											},
+											"response": []
+										},
+										{
+											"name": "localhost:5000/vigenere_cipher",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"decryption\",\r\n    \"key\": \"somekey\",\r\n    \"text\": \"AIEZKDIPMWMKBMRSHBETIAN\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/vigenere_cipher",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"vigenere_cipher"
+													]
+												}
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Transpositional Ciphers",
+					"item": [
+						{
+							"name": "Rail Fence Cipher",
+							"item": [
+								{
+									"name": "localhost:5000/rail_fence_cipher",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"process_type\": \"encryption\",\r\n    \"key\": 3,\r\n    \"text\": \"Computer Security Project\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:5000/rail_fence_cipher",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"rail_fence_cipher"
+											]
+										}
+									},
+									"response": []
+								},
+								{
+									"name": "localhost:5000/rail_fence_cipher",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"process_type\": \"decryption\",\r\n    \"key\": 3,\r\n    \"text\": \"Cu uyotoptrScrt rjcmeeiPe\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:5000/rail_fence_cipher",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"rail_fence_cipher"
+											]
+										}
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "Columnar Cipher",
+							"item": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Modern Ciphers",
+			"item": [
+				{
+					"name": "Symmetric Key Ciphers",
+					"item": [
+						{
+							"name": "Block Ciphers",
+							"item": [
+								{
+									"name": "AES",
+									"item": [
+										{
+											"name": "localhost:5000/AES",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"encryption\",\r\n    \"key\": \"keycomsec\",\r\n    \"text\": \"Computer Security Project\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/AES",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"AES"
+													]
+												},
+												"description": "POST request to encrypt message using AES"
+											},
+											"response": []
+										},
+										{
+											"name": "localhost:5000/AES",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"decryption\",\r\n    \"key\": \"keycomsec\",\r\n    \"text\": \"6g62H9bIXwxYrg4EpfqeLApikQUNFkxIsu3zcYhFe7Pztp/V+W7XJ+uxxXwuivNq\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/AES",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"AES"
+													]
+												},
+												"description": "POST request to decrypt message using AES"
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "DES",
+									"item": [
+										{
+											"name": "localhost:5000/DES",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"encryption\",\r\n    \"key\": \"keycomsecdes\",\r\n    \"text\": \"Computer Security Project\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/DES",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"DES"
+													]
+												},
+												"description": "POST request to encrypt message using DES"
+											},
+											"response": []
+										},
+										{
+											"name": "localhost:5000/DES",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"decryption\",\r\n    \"key\": \"keycomsecdes\",\r\n    \"text\": \"u/WuMJf6YIrTLox/0Uu+7H3NsHD3LzqtQfeOJRlgOp3T/NDkcMZe8A==\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/DES",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"DES"
+													]
+												},
+												"description": "POST request to decrypt message using DES"
+											},
+											"response": []
+										}
+									]
+								},
+								{
+									"name": "Blowfish",
+									"item": [
+										{
+											"name": "localhost:5000/Blowfish",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"decryption\",\r\n    \"key\": \"keycomsec\",\r\n    \"text\": \"cEDc7ukvB2dGkgYj5dJ26CeFaeIz3O/urUKPwhHAPNV3bgMk3cgG5Q==\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/Blowfish",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"Blowfish"
+													]
+												},
+												"description": "POST request to decrypt message using Blowfish"
+											},
+											"response": []
+										},
+										{
+											"name": "localhost:5000/Blowfish",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"encryption\",\r\n    \"key\": \"keycomsec\",\r\n    \"text\": \"Computer Security Project\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/Blowfish",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"Blowfish"
+													]
+												},
+												"description": "POST request to encrypt message using Blowfish"
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "Stream Ciphers",
+							"item": [
+								{
+									"name": "ARC4",
+									"item": [
+										{
+											"name": "localhost:5000/ARC4",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"encryption\",\r\n    \"key\": \"newkeyacr\",\r\n    \"text\": \"Computer Security Project\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/ARC4",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"ARC4"
+													]
+												},
+												"description": "POST request to encrypt message using ARC4"
+											},
+											"response": []
+										},
+										{
+											"name": "localhost:5000/ARC4",
+											"request": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"process_type\": \"decryption\",\r\n    \"key\": \"newkeyacr\",\r\n    \"text\": \"6289g3qp3cogsPJb/8mf4G5QKpsvN8QIqw==\"\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "localhost:5000/ARC4",
+													"host": [
+														"localhost"
+													],
+													"port": "5000",
+													"path": [
+														"ARC4"
+													]
+												},
+												"description": "POST request to decrypt message using ARC4"
+											},
+											"response": []
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Asymmetric Key Ciphers",
+					"item": [
+						{
+							"name": "RSA",
+							"item": [
+								{
+									"name": "localhost:5000/RSA/generate_key",
+									"protocolProfileBehavior": {
+										"disableBodyPruning": true
+									},
+									"request": {
+										"method": "GET",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:5000/RSA/generate_key",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"RSA",
+												"generate_key"
+											]
+										},
+										"description": "GET request to get public and privated keys for RSA"
+									},
+									"response": []
+								},
+								{
+									"name": "localhost:5000/RSA",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"process_type\": \"encryption\",\r\n    \"key\": \"-----BEGIN PUBLIC KEY-----\\nMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAnM5uRQMg98uOILLB6SaZ\\nsx/ml2ev2NlXnwpPWWTBwlzxm/P9QJ9trB21vkxzwcqBktTppypMdmtGO8rJOXF7\\nt6sCOok7S7p0TnJVOmziMNoUnArBqAKZlOGkt+sH3gZbw+z87MLKZTCiuiQE6cjB\\nP3xeGvzWKK1xpxSLsALXz9u7YRlURQK5h2CUXGG0taQrWUqwjEqAm7EJ2kuAtC4x\\nv6wdLhohLrZ9rVkG7tfHfwQ0Hwbggme7/v/03cXelMMRtVjNPwjwoJrWZ0/WZVsT\\nss3JTxBHtHouJEt/d1SWBWXhayRhBa+rNEnH47hHTkIC3r9Py3w8gIu6zt7tVCHU\\nPz6TsxP1S/qpuNzCxKBlQlWkDTFxFThWJnytltQFFYZ1pQFxxMBAOE+nchcRpgEP\\nW9d7GmjFmCMhFVs88x0rBVNZ7te+Z0VIP3PLkMwe/3efvELoYRvOR22+8pVbYLQy\\nhfmaDr3i9g8vW2n1BH/qI1M8biqvR1+TTYv1m1T+pvxNAgMBAAE=\\n-----END PUBLIC KEY-----\",\r\n    \"text\": \"Computer Security Project\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:5000/RSA",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"RSA"
+											]
+										},
+										"description": "POST Request to encrypt a message using RSA"
+									},
+									"response": []
+								},
+								{
+									"name": "localhost:5000/RSA",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"process_type\": \"decryption\",\r\n    \"key\": \"-----BEGIN RSA PRIVATE KEY-----\\n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\\n-----END RSA PRIVATE KEY-----\",\r\n    \"text\": \"To8S0zHrPztufAbgg4sVJRhrj5amuJLJMbPFiejDz0hsLK9Lyuaoys+zxa/sAgGVe2bauKSip1d6hV92r0OtvbHf3y+XjtpOvX2NnyxRjHvhXUfk8NWtiSM2Pe8gFYEaYPcFhzZDhrNWYMSnj5w3Y4r1Umx2vjBNU4+ktg3/u48Q8XBaqSg2L1fKQ1W0WgMrt2Fg/yME/jUZ0g2gL8Kv9Bg68LlZJC5ztlnNG60rv+watQzutDuQ10PNoRuinVi0ac3EIcgHTmvooYG36UaOIu79ZrpIu31jC1Nd0FyCwq9/82TtwpJfCFxxMNHQf8mXEVEwzUmc2hkE4vIxTPnORXlHxVAYBmwGLxl8kw1rgVHkxdzJClpFwUrfGgqGbdnWyrWjZBL7McwXMYjycYFOURxMgnuYa/r3f0ujqscbnI1kpTGBy8H5ark3mcaBCSfNJwBepzmbPd3QlYPA/vXYJd0AVKx/ze3DrNrBjK6zdE80v4AUeWXcAW4RWzjp0X1I\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:5000/RSA",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"RSA"
+											]
+										},
+										"description": "POST request to decrypt a message using RSA"
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "DSA",
+							"item": [
+								{
+									"name": "localhost:5000/DSA/generate_key",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "localhost:5000/DSA/generate_key",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"DSA",
+												"generate_key"
+											]
+										},
+										"description": "GET request to generate DSA key"
+									},
+									"response": []
+								},
+								{
+									"name": "localhost:5000/DSA",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"process_type\": \"sign\",\r\n    \"key\": \"-----BEGIN PRIVATE KEY-----\\nMIICXAIBADCCAjUGByqGSM44BAEwggIoAoIBAQCBZiWZbf621fqsvB7WOxbEhk7G\\nKfCH8vtUuqS4HVeKglSvWcZCvzt4x1sG44hIGO03XulcQsD6EBEgn/ClVrZY9nZO\\nlTL+VE/nK0ZWTwAmAyUhxAzAG8RykTBmLkGRmk1MOtzY/IFW9CiHjfhefG9LtsYq\\nYi9rU3I7P9uVJ2eDGgJp3SFqFbRPjkFo3a4/gS6/2R9CzkCeyz74jlFV1DKeeJqB\\nvBfh5MBUH0WmmOm1qhDJvHInMiHRFjm1HIZ4yjBQb3ZGw4fswKWYUh/8PidPhlNr\\njHqfolqkMgi3FwOfl4VD70qh+of+PCx4AFFJ61+pSZ4g/yJ4Qh/Uto5H2/hRAh0A\\ngxcPUzzyvboqbrjaedQIjDauCnNJUdxs4E+JWQKCAQAXkAzdmw9NFhVKFx3RqV3S\\nipsDGQuG2NdeEJfZNO5ILpvVLntXwz5A6GISv2kPrAkPt9JMD2Q8d/oVmYCmsTK0\\neZ2Dc8Mg/icW35asSM7TnI4NsCpV3ATR0nM+NgY58SJRidhTlLid7Dx6xvpNVRU+\\nKyPEEr271XRjV9L9hRsiqdT7pMKbCE9YCcPW6out9Qwa7lSdsdJXerE/+9nuySgO\\nxboSmzMpR8zI5VXRlOFxp3WTAaGJZXUxlFXGjSzSzZqhf3MJ9gOpsg7LRF7zL0Am\\nhr4glTGidWpDvfgSDKDG0L7Aaiq88Q7Yka2DcsmaqufqO++Z1BhOZpHC55j1SAF8\\nBB4CHGJUT9OoBRfSONWgwWW2YT4P/XNeUP8jxbRYvZI=\\n-----END PRIVATE KEY-----\",\r\n    \"text\": \"Shivank Shukla\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:5000/DSA",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"DSA"
+											]
+										},
+										"description": "POST request to Sign a message using DSA"
+									},
+									"response": []
+								},
+								{
+									"name": "localhost:5000/DSA",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"process_type\": \"verify\",\r\n    \"key\": \"-----BEGIN PUBLIC KEY-----\\nMIIDQjCCAjUGByqGSM44BAEwggIoAoIBAQCBZiWZbf621fqsvB7WOxbEhk7GKfCH\\n8vtUuqS4HVeKglSvWcZCvzt4x1sG44hIGO03XulcQsD6EBEgn/ClVrZY9nZOlTL+\\nVE/nK0ZWTwAmAyUhxAzAG8RykTBmLkGRmk1MOtzY/IFW9CiHjfhefG9LtsYqYi9r\\nU3I7P9uVJ2eDGgJp3SFqFbRPjkFo3a4/gS6/2R9CzkCeyz74jlFV1DKeeJqBvBfh\\n5MBUH0WmmOm1qhDJvHInMiHRFjm1HIZ4yjBQb3ZGw4fswKWYUh/8PidPhlNrjHqf\\nolqkMgi3FwOfl4VD70qh+of+PCx4AFFJ61+pSZ4g/yJ4Qh/Uto5H2/hRAh0AgxcP\\nUzzyvboqbrjaedQIjDauCnNJUdxs4E+JWQKCAQAXkAzdmw9NFhVKFx3RqV3SipsD\\nGQuG2NdeEJfZNO5ILpvVLntXwz5A6GISv2kPrAkPt9JMD2Q8d/oVmYCmsTK0eZ2D\\nc8Mg/icW35asSM7TnI4NsCpV3ATR0nM+NgY58SJRidhTlLid7Dx6xvpNVRU+KyPE\\nEr271XRjV9L9hRsiqdT7pMKbCE9YCcPW6out9Qwa7lSdsdJXerE/+9nuySgOxboS\\nmzMpR8zI5VXRlOFxp3WTAaGJZXUxlFXGjSzSzZqhf3MJ9gOpsg7LRF7zL0Amhr4g\\nlTGidWpDvfgSDKDG0L7Aaiq88Q7Yka2DcsmaqufqO++Z1BhOZpHC55j1SAF8A4IB\\nBQACggEAXr9HatMl/DqZKGgAJfH8OM7+YPe8UDktePVC6kTGyVWhK5ZZRZNtFC9K\\nih+wiiPaG7RTC9a19or6zaVy/hIc42BDM+H3BEeIqHuHzuPLXG6K/jHvaBXkWUjE\\n088lx8bJusz0VY1hx/BCLp3Lxxk6ixINJ1ptlwi0eq69mkSNqP08Uuuh27CxxVt9\\nqmgxuVqHSiEixSXUNbq2ajjIdBQU63Qi9aStwrPWRN4oYGtMi5jd9+bxNCss67WQ\\n7XUtkAocpgt9Uv4I1EB30hqd5mDncBWA7GW404z5bIFyDHAhVApVOSZ6Hyyh92nC\\nrbf5iGNVXrfUcGcIKsehP2Qgd5zYQQ==\\n-----END PUBLIC KEY-----\",\r\n    \"text\": \"Shivank Shukla\",\r\n    \"signature\": \"C+hK15iMJfPfTJ/je3VmnXHPKibSJBls22oaoX17wxFm2m/CW/378EeaSiGnNvQFJRqI9lk6LEU=\"\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "localhost:5000/DSA",
+											"host": [
+												"localhost"
+											],
+											"port": "5000",
+											"path": [
+												"DSA"
+											]
+										},
+										"description": "POST request to verify a message using DSA"
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
